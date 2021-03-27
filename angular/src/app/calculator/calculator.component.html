@@ -1,0 +1,43 @@
+<div class="layout-column align-items-center">
+
+  <h4 data-test-id="total-operations" class="pt-50">Total operations performed: {{count}}</h4>
+  <div class="card">
+    <form>
+    <section class="card-text">
+      <div class="layout-row justify-content-around align-items-center mt-40">
+        <input name="input1" [formControl]="inp1" type="number" class="ml-3 mr-3" data-test-id="app-input1" autocomplete="off" placeholder="Eg: 1"
+               name="input1"/>
+
+        <label class="ml-2 mr-2 symbol text-center" data-test-id="selected-operator">{{symbol}}</label>
+
+        <input name="input2" [formControl]="inp2" type="number" data-test-id="app-input2" autocomplete="off" class="ml-3 mr-3"
+               placeholder="Eg: 2"/>
+      </div>
+
+      <div class="layout-row justify-content-around mt-30">
+        <button type="submit" data-test-id="add-button" (click)="operate('addition')"><span
+          class="operationFont">+</span></button>
+        <button type="submit" data-test-id="minus-button" (click)="operate('substraction')">
+          <span class="operationFont">-</span></button>
+        <button type="submit" data-test-id="multiply-button" (click)="operate('multiplication')"><span
+          class="operationFont">*</span></button>
+        <button type="submit" data-test-id="divide-button" (click)="operate('division')"><span
+          class="operationFont">/</span>
+        </button>
+      </div>
+
+
+      <div class="layout-row justify-content-between align-items-center mt-30">
+        <button type="reset" class="outline danger" data-test-id="reset-button" (click)="reset()">
+          Reset
+        </button>
+        <div class="layout-row justify-content-center align-items-center result-container">
+          <h5 *ngIf="result" data-test-id="result" class="result-value ma-0 slide-up-fade-in">Result: {{result}}</h5>
+        </div>
+
+      </div>
+    </section>
+  </form>
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 89.0.4389 (Mac OS X 10.15.6)" package="unit" timestamp="2021-03-26T19:54:17" id="0" hostname="Raghavas-MacBook-2019.local" tests="8" errors="0" failures="0" time="0.186">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/89.0.4389.90 Safari/537.36"/>
+  </properties>
+  <testcase name="CalculatorComponent Should be able to add the numbers" time="0.08" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Initial UI is rendered as expected" time="0.02" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should reset the component when reset button is clicked" time="0.016" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should implement the sequence of operations" time="0.017" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should be able to subtract the numbers" time="0.015" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should be able to multiple the numbers" time="0.012" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should maintain the total operation count" time="0.014" classname=".CalculatorComponent"/>
+  <testcase name="CalculatorComponent Should be able to divide the numbers" time="0.012" classname=".CalculatorComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
